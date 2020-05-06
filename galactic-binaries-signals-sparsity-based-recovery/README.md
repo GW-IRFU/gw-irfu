@@ -4,7 +4,11 @@ This code was developed by CEA-IRFU to answer the problem of Galactic Binaries d
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+* Download the content of this folder.
+* Install Prerequisites.
+* Download data
+* Data folder in jupyter notebook demonstration code
+* Launch notebook
 
 ### Prerequisites
 
@@ -12,19 +16,19 @@ These instructions will get you a copy of the project up and running on your loc
   - `numpy` (version 1.17.2)
   - `matplotlib.pyplot` (`matplotlib` version 3.1.1)
   - `scipy.stats` (`scipy` version 1.3.1)
+  - `math`
 * LDC code: [LDC Website](https://lisa-ldc.lal.in2p3.fr/ldc) - python modules:
   - `LISAhdf5`
   - `tdi`
   - `LISAParameters`
 * Jupyter Notebook (for demonstration code)
 
-### Installing
 
-Download the whole folder. The code can be used as it is, an example is given in the jupyter notebook.
+### Download Data
 
-## Download Data
+The data is open source and can be found on LDC website: [LCD Website](https://lisa-ldc.lal.in2p3.fr/ldc).
 
-LDC website: [LCD Website](https://lisa-ldc.lal.in2p3.fr/ldc)
+This code is supposed to be run on the LDC1-3 (verification galactic binaries) data.
 
 ## Running the tests
 
