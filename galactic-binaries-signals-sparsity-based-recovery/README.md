@@ -7,7 +7,7 @@ This code was developed by CEA-IRFU to answer the problem of Galactic Binaries d
 * Download the content of this folder.
 * Install Prerequisites.
 * Download data
-* Data folder in jupyter notebook demonstration code
+* Set Data folder in jupyter notebook demonstration code
 * Launch notebook
 
 ### Prerequisites
@@ -48,7 +48,7 @@ For more information on the methods developed here, please refer to the correspo
 
 ## License
 
-This project is licensed under the GPL License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL License - see the [LICENSE](../LICENSE) file for details
 
 ## Acknowledgments
 
