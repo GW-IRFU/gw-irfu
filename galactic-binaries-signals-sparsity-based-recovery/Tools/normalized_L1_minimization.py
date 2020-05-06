@@ -10,8 +10,8 @@ def prox_f(u, gamma,alpha=1.):
         where x = [A E] in C^(nx2)
     Finds joint solution for [A E] vector
 
-    @param u       : array of initial signal (noisy) in frequency domain
-    @param gamma_n : array of threshold values (frequency domain)
+    @param u       : complex array of initial signal (noisy) in frequency domain
+    @param gamma_n : real array of threshold values (frequency domain)
     '''
     u1 = u[:,0]
     u2 = u[:,1]
@@ -49,8 +49,8 @@ def prox_f_block(u, blocks, gamma_b, freq, alpha=1., W=None, Nb_max=10):
     @param gamma_b : block thresholds: in R^Nb (threshold per block)
     @param freq    : frequency vector
     @param alpha   : dilatation coeff
-    @param W       : weights to apply
-    @param Nb      : maximal size of an active block
+    @param W       : weights to apply in frequency domain. (Default W = None)
+    @param Nb      : maximal size of an active block (Default: Nb = 10)
 
     @OUTPUT z      : z = prox_{alpha*f}(u)
     '''

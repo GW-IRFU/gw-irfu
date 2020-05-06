@@ -4,6 +4,9 @@ import scipy.stats as stats
 
 def compute_logError(x_th,x_est):
     '''
+    Compute NMSE:
+    NMSE = -10*log10(||x_th-x_est||/||x_th||)
+
     @param x_th : theoretic signal
     @param x_est: estimated signal
     '''
@@ -24,8 +27,9 @@ def find_threshold_chi2(Nfreedom,p,scale=1.):
 
 def norm12(x):
     '''
-    x = [Af Ef] with both Af and Ef complex arrays
-    @param x :
+    ||x||_{12} = sum_k sqrt{sum_j |x[k,j]|^2}
+
+    @param x : complex array of size Nf*2: x = [Af Ef] with both Af and Ef complex arrays
 
     @OUT : mixed norm element by element
     '''
@@ -78,7 +82,12 @@ def norm12_blocks(u, blocks):
 
 def stdDev_estimator(y, N=50):
     '''
-    Standard Deviation empiric estimator for normalized signal y
+    Computes an estimate of signal y standard deviation using Median Absolute
+    Deviation estimator (MAD) over sliding window of size 2*N:
+
+    sigma[k] = median(|X-median(X)|)/0.67449
+    where X = y[k-N:k+N]
+
     @param y : real signal
     @param N : half size of window (in number of used points)
 
@@ -89,11 +98,11 @@ def stdDev_estimator(y, N=50):
     Ntot = sigma.shape[0]
 
     for k in range(N,Ntot-N):
-        X = y[k:k+N]
+        X = y[k-N:k+N]
         medX = np.median(X)
         sigma[k] = np.median(np.abs(X-medX))/0.67449
 
-    sigma[:N]=sigma[N]*np.ones(N)
-    sigma[-N:]=sigma[-N]*np.ones(N)
+    # sigma[:N]=sigma[N]*np.ones(N)
+    # sigma[-N:]=sigma[-N]*np.ones(N)
 
     return(sigma)
