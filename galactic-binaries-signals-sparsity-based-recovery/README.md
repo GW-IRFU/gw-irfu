@@ -26,7 +26,7 @@ This code was developed by CEA-IRFU to answer the problem of Galactic Binaries d
 
 ### Download Data
 
-The data is open source and can be found on LDC website: [LCD Website](https://lisa-ldc.lal.in2p3.fr/ldc) > Challenge 1 > Download datasets
+The data can be found on LDC website: [LCD Website](https://lisa-ldc.lal.in2p3.fr/ldc) > Challenge 1 > Download datasets
 
 
 
