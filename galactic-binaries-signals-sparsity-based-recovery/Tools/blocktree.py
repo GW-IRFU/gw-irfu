@@ -19,7 +19,7 @@ def compute_block_threshold(blocks,p, factor=4,scale=1.):
     gamma = 0.*blocks[:,2]
     for k in range(Nb):
         blockSize = blocks[k,2]
-        
+
         gamma[k] = np.sqrt(blockSize*stats.chi2.isf(1.-p,factor*blockSize, scale=scale))
     return(gamma)
 

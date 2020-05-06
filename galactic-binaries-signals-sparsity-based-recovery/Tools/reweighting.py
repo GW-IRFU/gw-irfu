@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from .utils import *
 
 def compute_weights_l1(x_k, gamma_0 ,coeff=1.):
