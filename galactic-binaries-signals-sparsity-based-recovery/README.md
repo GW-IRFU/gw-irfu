@@ -26,9 +26,14 @@ This code was developed by CEA-IRFU to answer the problem of Galactic Binaries d
 
 ### Download Data
 
-The data is open source and can be found on LDC website: [LCD Website](https://lisa-ldc.lal.in2p3.fr/ldc).
+The data is open source and can be found on LDC website: [LCD Website](https://lisa-ldc.lal.in2p3.fr/ldc) > Challenge 1 > Download datasets
 
-This code is supposed to be run on the LDC1-3 (verification galactic binaries) data.
+
+
+This code is supposed to be run on the LDC1-3 (verification galactic binaries) data. Please download the files:
+
+* LDC1-3_VGB_v2.hdf5
+* LDC1-3_VGB_v2_FD_noiseless.hdf5  (noiseless version in order to compute error on solution)
 
 ## Running the tests
 
