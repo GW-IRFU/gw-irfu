@@ -1,6 +1,6 @@
 # Sparsity Based Signal Recovery for Galactic Binaries Gravitational Waves
 
-This code was developed by CEA-IRFU to answer the problem of Galactic Binaries detection in the LISA Data Challenges of first generation ([LDC Website](https://lisa-ldc.lal.in2p3.fr/ldc)).
+This code was developed by [CEA-IRFU](http://irfu.cea.fr/en/Phocea/Vie_des_labos/Ast/ast_visu.php?id_ast=4698) to answer the problem of Galactic Binaries detection in the LISA Data Challenges of first generation ([LDC Website](https://lisa-ldc.lal.in2p3.fr/ldc)).
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ Run the demo jupyter notebook
 * Jérôme BOBIN
 * Hervé MOUTARDE
 
-For more information on the methods developed here, please refer to the corresponding article:
+For more information on the methods developed here, please refer to the corresponding article: A. Blelly, J. Bobin, H. Moutarde, *Sparsity Based Recovery of Galactic Binaries Gravitational Waves*, [arXiv:2005.03696 [gr-qc]](https://arxiv.org/abs/2005.03696).
 
 ## License
 
